@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+# Interactive Canine Anatomy Model
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive educational web application created for the Kerry Blue Terrier Foundation.
 
-## Available Scripts
+The application allows users to select different canine anatomy layers and display them individually or combine several layers on top of the dog model. This gives users a more flexible way to explore how different anatomical systems relate to one another.
 
-In the project directory, you can run:
+## Live Demo
 
-### `npm start`
+[View the live project](https://clarissa-garcia.github.io/dog-model/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Select and display individual anatomy layers
+- Combine multiple anatomical systems on one model
+- Interact with highlighted regions for more information
+- Support for both mouse and touchscreen input
+- Responsive browser-based interface
+- Deployed with GitHub Pages
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React
+- JavaScript
+- HTML
+- CSS
+- SVG
+- Bootstrap
+- React Bootstrap
+- styled-components
+- Sass
+- GitHub Pages
 
-### `npm run build`
+## How It Works
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application uses a shared SVG coordinate system to keep each anatomical image aligned with the base dog model. When a user selects an anatomy layer, that image is displayed over the model.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Interactive SVG paths are used to define specific regions of the anatomy. Mouse and touch events allow users to select these regions and view additional information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## My Role
 
-### `npm run eject`
+I developed the application for the Kerry Blue Terrier Foundation and was responsible for:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Building the interactive anatomy interface
+- Implementing the anatomy layer selection and stacking behavior
+- Adding mouse and touchscreen interactions
+- Rebuilding legacy frontend functionality with React
+- Translating stakeholder feedback into application updates
+- Deploying the application through GitHub Pages
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Running the Project Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js
+- npm
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone the repository:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+git clone https://github.com/clarissa-garcia/dog-model.git
+Open the project directory:
+cd dog-model
+Install the dependencies:
+npm install
+Start the development server:
+npm start
+Open the following address in your browser:
+http://localhost:3000
+Production Build
 
-### Code Splitting
+Create an optimized production build:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm run build
 
-### Analyzing the Bundle Size
+Deploy the application to GitHub Pages:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm run deploy
+Technical Challenges
+Aligning Anatomy Layers
 
-### Making a Progressive Web App
+Each anatomy image needs to remain aligned with the same base model. The application uses a shared SVG view box and coordinate system so selected layers can be placed directly over one another.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Supporting Touch Devices
 
-### Advanced Configuration
+Desktop users can interact with the model using a mouse, while mobile and tablet users need touch-based controls. The application includes separate touch handling so the interactive regions remain usable across different devices.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Managing Changing Requirements
 
-### Deployment
+The project was completed through a long-running, project-based collaboration where features and presentation requirements changed over time. This required keeping the interface flexible and updating existing behavior without rebuilding the application from scratch.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Project Status
 
-### `npm run build` fails to minify
+The interactive model is currently available as a demonstration. Final publication and distribution of the complete educational material depend on approval of the associated book and illustration rights.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Future Improvements
+Improve keyboard accessibility
+Improve screen-reader support
+Add clearer indicators for selected layers
+Add a button to clear all anatomy layers
+Improve the layout on smaller screens
+Add zoom and pan controls
+Expand automated test coverage
+Add guided anatomy lessons
+Add more detailed labels and descriptions
+Acknowledgments
+
+Created for the Kerry Blue Terrier Foundation.
