@@ -25,61 +25,61 @@ import OneThousandsPic from "./layer10.png";
 import OneHundredThousandsPic from "./layer11.png";
 
 export const ButtonImageContainer = [
-  {
-    buttonName: "Muscles (100s)",
-    imageName: HundredsPic,
-    textField: Hundreds,
-  },
-  {
-    buttonName: "Muscles (200s)",
-    imageName: TwoHundredsPic,
-    textField: TwoHundreds,
-  },
-  {
-    buttonName: "Muscles (300s)",
-    imageName: ThreeHundredsPic,
-    textField: ThreeHundreds,
-  },
-  {
-    buttonName: "Muscles (400s)",
-    imageName: FourHundredsPic,
-    textField: FourHundreds,
-  },
-  {
-    buttonName: "Muscles (500s)",
-    imageName: FiveHundredsPic,
-    textField: FiveHundreds,
-  },
-  {
-    buttonName: "Muscles (600s)",
-    imageName: SixHundredsPic,
-    textField: SixHundreds,
-  },
-  {
-    buttonName: "Forelimb/Hindlimb Medial Superficial Layer",
-    imageName: SevenHundredsPic,
-    textField: SevenHundreds,
-  },
-  {
-    buttonName: "Forelimb/Hindlimb Medial Deep Layer",
-    imageName: EightHundredsPic,
-    textField: EightHundreds,
-  },
-  {
-    buttonName: "Forelimb/Hindlimb Lateral Deep Layer",
-    imageName: NineHundredsPic,
-    textField: NineHundreds,
-  },
-  {
-    buttonName: "Forelimb/Hindlimb Lateral Middle Layer",
-    imageName: OneThousandsPic,
-    textField: OneThousands,
-  },
-  {
-    buttonName: "Forelimb/Hindlimb Lateral Superficial Layer",
-    imageName: OneHundredThousandsPic,
-    textField: OneHundredThousands,
-  },
+{
+  buttonName: "Deep Internal Muscles",
+  imageName: HundredsPic,
+  textField: Hundreds,
+},
+{
+  buttonName: "Deep Trunk Muscles",
+  imageName: TwoHundredsPic,
+  textField: TwoHundreds,
+},
+{
+  buttonName: "Spinal and Ear Muscles",
+  imageName: ThreeHundredsPic,
+  textField: ThreeHundreds,
+},
+{
+  buttonName: "Facial and Back Muscles",
+  imageName: FourHundredsPic,
+  textField: FourHundreds,
+},
+{
+  buttonName: "Intermediate Trunk Muscles",
+  imageName: FiveHundredsPic,
+  textField: FiveHundreds,
+},
+{
+  buttonName: "Superficial Head and Neck",
+  imageName: SixHundredsPic,
+  textField: SixHundreds,
+},
+{
+  buttonName: "Medial Limb Muscles — Superficial",
+  imageName: SevenHundredsPic,
+  textField: SevenHundreds,
+},
+{
+  buttonName: "Medial Limb Muscles — Deep",
+  imageName: EightHundredsPic,
+  textField: EightHundreds,
+},
+{
+  buttonName: "Lateral Limb Muscles — Deep",
+  imageName: NineHundredsPic,
+  textField: NineHundreds,
+},
+{
+  buttonName: "Lateral Limb Muscles — Intermediate",
+  imageName: OneThousandsPic,
+  textField: OneThousands,
+},
+{
+  buttonName: "Lateral Limb and Trunk Muscles — Superficial",
+  imageName: OneHundredThousandsPic,
+  textField: OneHundredThousands,
+},
 ];
 
 export default ButtonImageContainer;

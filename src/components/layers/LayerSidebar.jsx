@@ -8,9 +8,19 @@ function LayerSidebar({
 }) {
   return (
     <div className="layer-sidebar">
-      <header className="layer-sidebar__heading">
-        <h2>Anatomy Layers</h2>
-        <p>Select a layer to explore its highlighted regions.</p>
+      <header className="panel-heading">
+        <p className="panel-heading__eyebrow">
+          Explore
+        </p>
+
+        <h2 className="panel-heading__title">
+          Anatomy Layers
+        </h2>
+
+        <p className="panel-heading__description">
+          Select a system to view its anatomy and explore
+          highlighted regions.
+        </p>
       </header>
 
       <div className="layer-sidebar__list">
@@ -23,6 +33,14 @@ function LayerSidebar({
             onSelect={onSelectLayer}
           />
         ))}
+      </div>
+
+      <div className="layer-sidebar__tip">
+        <span aria-hidden="true">ⓘ</span>
+
+        <p>
+          Hover over a highlighted region to learn more about it.
+        </p>
       </div>
     </div>
   );

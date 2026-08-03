@@ -2,18 +2,20 @@ import React from "react";
 
 function AnatomyLayout({ sidebar, model, information }) {
   return (
-    <main className="anatomy-layout">
-      <aside className="anatomy-layout__sidebar">
-        {sidebar}
-      </aside>
+    <main className="anatomy-page">
+      <section className="anatomy-workspace">
+        <aside className="anatomy-workspace__sidebar">
+          {sidebar}
+        </aside>
 
-      <section className="anatomy-layout__model">
-        {model}
+        <section className="anatomy-workspace__viewer">
+          {model}
+        </section>
+
+        <aside className="anatomy-workspace__information">
+          {information}
+        </aside>
       </section>
-
-      <aside className="anatomy-layout__information">
-        {information}
-      </aside>
     </main>
   );
 }

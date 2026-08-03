@@ -10,44 +10,86 @@ function ModelViewer({
   onRegionSelect,
 }) {
   if (!activeLayer) {
-    return <p>No anatomy layer is available.</p>;
+    return null;
   }
 
   const regions = activeLayer.textField?.[0]?.array ?? [];
 
   return (
-    <div className="model-viewer">
-      <svg
-        className="model-viewer__svg"
-        viewBox="0 0 4204 3294"
-        role="img"
-        aria-label={`Interactive canine anatomy model showing ${activeLayer.buttonName}`}
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <image
-          className="model-viewer__base"
-          href={startingpic}
-          width="4204"
-          height="3294"
-          preserveAspectRatio="none"
-        />
+    <div className="model-section">
+      <header className="model-section__header">
+        <div>
+          <p className="model-section__eyebrow">
+            Current system
+          </p>
 
-        <image
-          className="model-viewer__layer"
-          href={activeLayer.imageName}
-          width="4204"
-          height="3294"
-          preserveAspectRatio="none"
-        />
+          <h2>{activeLayer.buttonName}</h2>
+        </div>
 
-        <HotspotLayer
-          regions={regions}
-          activeRegionId={activeRegion?.id}
-          onRegionEnter={onRegionEnter}
-          onRegionLeave={onRegionLeave}
-          onRegionSelect={onRegionSelect}
-        />
-      </svg>
+        <div className="model-section__tools">
+          <button
+            type="button"
+            className="model-tool-button"
+            aria-label="Zoom controls will be added later"
+            disabled
+          >
+            −
+          </button>
+
+          <span className="model-section__zoom">100%</span>
+
+          <button
+            type="button"
+            className="model-tool-button"
+            aria-label="Zoom controls will be added later"
+            disabled
+          >
+            +
+          </button>
+        </div>
+      </header>
+
+      <div className="model-viewer">
+        <div className="model-viewer__canvas">
+          <svg
+            className="model-viewer__svg"
+            viewBox="0 0 4204 3294"
+            role="img"
+            aria-label={`Interactive canine anatomy model showing ${activeLayer.buttonName}`}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <image
+              className="model-viewer__base"
+              href={startingpic}
+              width="4204"
+              height="3294"
+              preserveAspectRatio="none"
+            />
+
+            <image
+              className="model-viewer__layer"
+              href={activeLayer.imageName}
+              width="4204"
+              height="3294"
+              preserveAspectRatio="none"
+            />
+
+            <HotspotLayer
+              regions={regions}
+              activeRegionId={activeRegion?.id}
+              onRegionEnter={onRegionEnter}
+              onRegionLeave={onRegionLeave}
+              onRegionSelect={onRegionSelect}
+            />
+          </svg>
+        </div>
+
+        <div className="model-viewer__legend">
+          <span className="model-viewer__legend-dot" />
+
+          <span>Interactive region</span>
+        </div>
+      </div>
     </div>
   );
 }
