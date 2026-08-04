@@ -114,6 +114,7 @@
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 10px;
+  gap: 0.45rem;
 }
 
 .site-header__about-link:hover {
@@ -157,6 +158,10 @@
     padding: 0.5rem 0.65rem;
     font-size: 0.78rem;
   }
+}
+
+.site-header__about-icon {
+  flex-shrink: 0;
 }
 
 @media (max-width: 480px) {

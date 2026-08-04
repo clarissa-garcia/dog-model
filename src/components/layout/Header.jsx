@@ -1,7 +1,8 @@
 import React from "react";
 import foundationLogo from "../../images/foundationLogo.png";
+import { UserRound } from "lucide-react";
 
-function Header() {
+function Header({ showAuthorLink = true }) {
   return (
     <header className="site-header">
       <div className="site-header__brand">
@@ -35,6 +36,24 @@ function Header() {
         >
           ☀
         </button>
+
+        {showAuthorLink &&
+          (<a
+            className="site-header__about-link"
+            href="#/author"
+          >
+          <UserRound
+            className="site-header__about-icon"
+            size={18}
+            aria-hidden="true"
+          />
+          <span>About the Author</span>
+        </a>)
+        
+        }
+        
+
+
       </div>
     </header>
   );
