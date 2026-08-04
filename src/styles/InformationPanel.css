@@ -32,6 +32,7 @@
 .information-panel__empty h3 {
   margin: 0;
   font-size: 0.95rem;
+  color: var(--text-primary);
 }
 
 .information-panel__empty p {
@@ -128,6 +129,22 @@
   color: var(--text-secondary);
   font-size: 0.78rem;
   line-height: 1.45;
+}
+
+[data-theme="dark"] .information-panel__empty h3,
+[data-theme="dark"] .region-card__title {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .information-panel__empty p,
+[data-theme="dark"] .region-card__description,
+[data-theme="dark"] .information-panel__instructions,
+[data-theme="dark"] .information-panel__instructions ol {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .region-card__identifier {
+  color: var(--text-soft);
 }
 
 @media (max-width: 1100px) {

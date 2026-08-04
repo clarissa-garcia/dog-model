@@ -53,7 +53,7 @@ function ModelViewer({
         <div className="model-viewer__canvas">
           <svg
             className="model-viewer__svg"
-            viewBox="0 0 4204 3294"
+            viewBox="300 160 3625 2700"
             role="img"
             aria-label={`Interactive canine anatomy model showing ${activeLayer.buttonName}`}
             xmlns="http://www.w3.org/2000/svg"

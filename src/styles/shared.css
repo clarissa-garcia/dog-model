@@ -17,6 +17,7 @@
   margin: 0;
   font-size: 1.05rem;
   font-weight: 650;
+  color: var(--text-primary);
 }
 
 .panel-heading__description {

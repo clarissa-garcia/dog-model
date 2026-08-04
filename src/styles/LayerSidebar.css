@@ -65,7 +65,7 @@
 }
 
 .layer-button--active .layer-button__icon {
-  color: #ffffff;
+  color: var(--surface);
   background: var(--accent);
 }
 
@@ -124,6 +124,26 @@
 
 .layer-sidebar__tip p {
   margin: 0;
+}
+
+[data-theme="dark"] .layer-button__name {
+  color: var(--text-primary);
+}
+
+[data-theme="dark"] .layer-button__description {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .layer-button__indicator {
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .layer-button--active .layer-button__name {
+  color: #ffffff;
+}
+
+[data-theme="dark"] .layer-button--active .layer-button__description {
+  color: #d8e7fb;
 }
 
 @media (max-width: 760px) {

@@ -47,21 +47,21 @@ function InformationPanel({ activeLayer, displayedRegion }) {
             {displayedRegion.action}
           </p>
 
-          <button
+          {/* <button
             type="button"
             className="region-card__action"
           >
             View region details
-          </button>
+          </button> */}
         </article>
       ) : (
         <div className="information-panel__empty">
-          <div
+          {/* <div
             className="information-panel__empty-icon"
             aria-hidden="true"
           >
             +
-          </div>
+          </div> */}
 
           <h3>{activeLayer?.buttonName}</h3>
 

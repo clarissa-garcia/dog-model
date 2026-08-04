@@ -15,7 +15,7 @@
 
 .model-section__header h2 {
   margin: 0;
-
+  color: var(--text-primary);
   font-size: 1.15rem;
   font-weight: 650;
 }
@@ -83,17 +83,17 @@
 
   overflow: hidden;
 
-  background:
+   background:
     linear-gradient(
       90deg,
-      rgba(221, 227, 236, 0.18) 1px,
+      var(--model-grid) 1px,
       transparent 1px
     ),
     linear-gradient(
-      rgba(221, 227, 236, 0.18) 1px,
+      var(--model-grid) 1px,
       transparent 1px
     ),
-    #fbfcfe;
+    var(--model-background);
 
   background-size: 32px 32px;
 
@@ -171,6 +171,17 @@
   fill: rgba(47, 104, 197, 0.28);
   stroke: var(--accent);
   stroke-width: 14;
+}
+
+[data-theme="dark"] .hotspot {
+  fill: rgba(110, 168, 255, 0.08);
+  stroke: rgba(134, 188, 255, 0.75);
+}
+
+[data-theme="dark"] .hotspot:hover,
+[data-theme="dark"] .hotspot--active {
+  fill: rgba(110, 168, 255, 0.34);
+  stroke: #a8cbff;
 }
 
 @media (max-width: 760px) {
