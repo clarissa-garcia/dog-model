@@ -1,12 +1,15 @@
 import React from "react";
+import foundationLogo from "../../images/foundationLogo.png";
 
 function Header() {
   return (
     <header className="site-header">
       <div className="site-header__brand">
-        <div className="site-header__logo" aria-hidden="true">
-          K
-        </div>
+         <img
+          className="site-header__foundation-logo"
+          src={foundationLogo}
+          alt="Lovin' the Blues — The Kerry Blue Terrier Foundation"
+        />
 
         <div>
           <p className="site-header__organization">

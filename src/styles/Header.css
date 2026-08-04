@@ -1,0 +1,179 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+
+  min-height: 92px;
+  padding: 0.8rem clamp(1rem, 3vw, 2.5rem);
+
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.site-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  width: auto;
+  min-width: 0;
+}
+
+.site-header__foundation-logo {
+  display: block;
+  flex-shrink: 0;
+
+  width: 260px;
+  height: 62px;
+
+  object-fit: contain;
+  object-position: left center;
+}
+
+.site-header__divider {
+  flex-shrink: 0;
+
+  width: 1px;
+  height: 48px;
+
+  background: var(--border);
+}
+
+.site-header__app-name {
+  min-width: 0;
+  margin-left: 0;
+}
+
+.site-header__organization {
+  margin: 0 0 0.2rem;
+
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-header__title {
+  margin: 0;
+
+  font-size: clamp(1rem, 1.7vw, 1.4rem);
+  font-weight: 650;
+  white-space: nowrap;
+}
+
+.site-header__actions {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 0.75rem;
+
+  margin-left: auto;
+}
+
+.site-header__status {
+  padding: 0.4rem 0.65rem;
+
+  color: var(--accent-dark);
+  font-size: 0.8rem;
+  font-weight: 600;
+
+  background: var(--accent-soft);
+  border-radius: 999px;
+}
+
+.site-header__theme-button {
+  display: grid;
+  place-items: center;
+
+  width: 40px;
+  height: 40px;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.site-header__theme-button:disabled {
+  opacity: 0.65;
+}
+
+.site-header__about-link {
+  display: inline-flex;
+  align-items: center;
+
+  min-height: 40px;
+  padding: 0.55rem 0.85rem;
+
+  color: var(--text-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.site-header__about-link:hover {
+  color: var(--accent);
+
+  background: var(--accent-soft);
+  border-color: var(--accent);
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    align-items: flex-start;
+
+    min-height: 76px;
+    padding: 0.65rem 1rem;
+  }
+
+  .site-header__foundation-logo {
+    width: 155px;
+    height: 48px;
+  }
+
+  .site-header__divider {
+    height: 38px;
+  }
+
+  .site-header__organization,
+  .site-header__status {
+    display: none;
+  }
+
+  .site-header__title {
+    max-width: 170px;
+
+    font-size: 0.9rem;
+    line-height: 1.2;
+    white-space: normal;
+  }
+
+  .site-header__about-link {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.78rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-header__foundation-logo {
+    width: 125px;
+  }
+
+  .site-header__divider {
+    display: none;
+  }
+
+  .site-header__app-name {
+    display: none;
+  }
+
+  .site-header__about-link {
+    min-height: 38px;
+    padding: 0.45rem 0.6rem;
+  }
+}

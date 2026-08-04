@@ -1,0 +1,163 @@
+.information-panel {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.information-panel__empty {
+  padding: 1.5rem 1rem;
+
+  text-align: center;
+
+  background: var(--surface);
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-medium);
+}
+
+.information-panel__empty-icon {
+  display: grid;
+  place-items: center;
+
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 0.8rem;
+
+  color: var(--accent);
+  font-size: 1.4rem;
+
+  background: var(--accent-soft);
+  border-radius: 999px;
+}
+
+.information-panel__empty h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.information-panel__empty p {
+  margin: 0.45rem 0 0;
+
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.region-card {
+  padding: 1rem;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-small);
+}
+
+.region-card__label {
+  margin-bottom: 0.45rem;
+
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.region-card__title {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
+.region-card__identifier {
+  margin: 0.3rem 0 0;
+
+  color: var(--text-soft);
+  font-size: 0.72rem;
+}
+
+.region-card__divider {
+  height: 1px;
+  margin: 0.9rem 0;
+
+  background: var(--border);
+}
+
+.region-card__description {
+  margin: 0;
+
+  color: var(--text-secondary);
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+.region-card__action {
+  width: 100%;
+  min-height: 40px;
+  margin-top: 1rem;
+
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 600;
+
+  background: var(--accent);
+  border: 0;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.region-card__action:hover {
+  background: var(--accent-dark);
+}
+
+.information-panel__instructions {
+  margin-top: auto;
+  padding-top: 1.25rem;
+}
+
+.information-panel__instructions h3 {
+  margin: 0 0 0.7rem;
+  font-size: 0.85rem;
+}
+
+.information-panel__instructions ol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+
+  margin: 0;
+  padding-left: 1.25rem;
+
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+@media (max-width: 1100px) {
+  .information-panel {
+    display: grid;
+    grid-template-columns:
+      minmax(220px, 0.7fr)
+      minmax(300px, 1fr);
+    gap: 1rem;
+  }
+
+  .information-panel .panel-heading {
+    grid-column: 1 / -1;
+  }
+
+  .information-panel__instructions {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 760px) {
+  .information-panel {
+    display: flex;
+  }
+
+  .information-panel__instructions {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+
+    border-top: 1px solid var(--border);
+  }
+}

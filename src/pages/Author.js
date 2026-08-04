@@ -1,5 +1,4 @@
 import React from "react";
-import "../../src/App.css";
 import skeletonRight from "../images/skeleton_right.jpg";
 import skeletonLeft from "../images/skeleton_left.jpg";
 import four_kerries_no_frame from "../images/four_kerries_no_frame.jpg";
@@ -9,6 +8,7 @@ import bookCover from "../images/book_cover.PNG";
 import plaqueCropped from "../images/Gardiner_plaque_cropped.jpg";
 import BackArrowSVG from "../images/backarrow.svg";
 import { Link } from "react-router-dom";
+import "../styles/index.css";
 
 export default function Author() {
   return (

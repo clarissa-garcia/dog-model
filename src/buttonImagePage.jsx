@@ -6,7 +6,7 @@ import Header from "./components/layout/Header";
 import InformationPanel from "./components/information/InformationPanel";
 import LayerSidebar from "./components/layers/LayerSidebar";
 import ModelViewer from "./components/model/ModelViewer";
-import "./App.css";
+import "./styles/index.css";
 
 function ButtonImagePage() {
   const [activeLayerIndex, setActiveLayerIndex] = useState(0);

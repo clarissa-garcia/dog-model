@@ -1,0 +1,133 @@
+.layer-sidebar {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.layer-sidebar__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.layer-button {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) 22px;
+  align-items: center;
+  gap: 0.7rem;
+
+  width: 100%;
+  min-height: 62px;
+  padding: 0.65rem 0.7rem;
+
+  text-align: left;
+
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--shadow-small);
+  cursor: pointer;
+
+  transition:
+    background-color 150ms ease,
+    border-color 150ms ease,
+    transform 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.layer-button:hover {
+  background: var(--surface-blue);
+  border-color: #adc3e9;
+  transform: translateY(-1px);
+}
+
+.layer-button--active {
+  background: var(--accent-soft);
+  border-color: var(--accent);
+  box-shadow:
+    inset 4px 0 0 var(--accent),
+    0 2px 8px rgba(47, 104, 197, 0.08);
+}
+
+.layer-button__icon {
+  display: grid;
+  place-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  color: var(--accent-dark);
+  font-size: 0.8rem;
+  font-weight: 700;
+
+  background: var(--surface-blue);
+  border-radius: 9px;
+}
+
+.layer-button--active .layer-button__icon {
+  color: #ffffff;
+  background: var(--accent);
+}
+
+.layer-button__content {
+  min-width: 0;
+}
+
+.layer-button__name,
+.layer-button__description {
+  display: block;
+}
+
+.layer-button__name {
+  overflow: hidden;
+
+  font-size: 0.87rem;
+  font-weight: 620;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.layer-button__description {
+  margin-top: 0.15rem;
+
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+}
+
+.layer-button__indicator {
+  display: grid;
+  place-items: center;
+
+  color: var(--text-soft);
+  font-weight: 700;
+}
+
+.layer-button--active .layer-button__indicator {
+  color: var(--accent);
+}
+
+.layer-sidebar__tip {
+  display: flex;
+  gap: 0.6rem;
+
+  margin-top: auto;
+  padding: 0.8rem;
+
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  line-height: 1.45;
+
+  background: var(--surface-blue);
+  border: 1px solid #dce8fb;
+  border-radius: var(--radius-medium);
+}
+
+.layer-sidebar__tip p {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .layer-sidebar__tip {
+    margin-top: 1rem;
+  }
+}
